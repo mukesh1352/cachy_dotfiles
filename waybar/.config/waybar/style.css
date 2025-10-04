@@ -1,0 +1,74 @@
+/* General font and size */
+* {
+    font-family: "Fira Code", monospace;
+    font-size: 12px;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+/* Left modules */
+#workspaces, #custom-quick_shell {
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin-right: 8px;
+}
+
+/* Workspace states */
+#workspaces button.active {
+    background: #eb6f92;  /* pink */
+    color: #1a1a1a;
+    font-weight: bold;
+}
+#workspaces button.occupied {
+    background: #d08770; /* orange */
+    color: #ffffff;
+}
+#workspaces button.empty {
+    background: rgba(30, 30, 30, 0.3);
+    color: #888888;
+}
+#workspaces button:hover {
+    transform: scale(1.05);
+}
+
+/* QuickShell module */
+#custom-quick_shell {
+    color: #eb6f92;
+    cursor: pointer;
+}
+
+/* Center module (clock) */
+#clock {
+    color: #eb6f92;
+    font-weight: bold;
+}
+
+/* Right modules */
+#cpu, #memory {
+    color: #d08770;
+    margin-left: 8px;
+}
+#battery {
+    color: #a3be8c;
+    margin-left: 8px;
+}
+#network {
+    color: #8fbcbb;
+    margin-left: 8px;
+}
+#pulseaudio {
+    color: #ebcb8b;
+    margin-left: 8px;
+}
+#cpu:hover, #memory:hover, #battery:hover, #network:hover, #pulseaudio:hover {
+    transform: scale(1.05);
+}
+
+/* Tray icons */
+#tray {
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 8px;
+    padding: 4px 6px;
+}
+

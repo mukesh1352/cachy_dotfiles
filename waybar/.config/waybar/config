@@ -1,0 +1,56 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["workspaces", "custom/quick_shell"],
+  "modules-center": ["clock"],
+  "modules-right": ["cpu", "memory", "battery", "network", "pulseaudio", "tray"],
+
+  "tray": {
+    "icon-size": 18
+  },
+
+  "workspaces": {
+    "all-outputs": true,
+    "disable-scroll": false
+  },
+
+  "clock": {
+    "format": "%a %b %d %H:%M",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%",
+    "tooltip": true,
+    "max-length": 20
+  },
+
+  "memory": {
+    "format": "RAM {used}/{total}GB",
+    "tooltip": true
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "tooltip": true,
+    "low-threshold": 15
+  },
+
+  "network": {
+    "format": "{ifname}: {ipaddr}",
+    "tooltip": true
+  },
+
+  "pulseaudio": {
+    "format": "Vol {volume}%",
+    "tooltip": true
+  },
+
+  "custom/quick_shell": {
+    "exec": "~/.config/waybar/scripts/quick_shell.sh",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{}"
+  }
+}
+
